@@ -12,6 +12,7 @@ knit        : slidify::knit2slides
 ---
 
 ## Tabla lenguaje marcadores
+Una tabla construida en lenguaje de marcadores.
 
 |                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
 |:-----------------|----:|---:|----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
@@ -24,8 +25,27 @@ knit        : slidify::knit2slides
 
 --- 
 
-## Slide 2
+## Grafica
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+
+--- 
+
+## Imagen Estatica
+
+Incluir una gráfica o imagen estática:
+
+![](imagen4.png)
+![](imagen2.jpg)
+
+--- 
+
+## Grafica ggplot2
 
 
+```r
+qplot(x=carat, binwidth=0.25, data = diamonds)
+```
+
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
 
 

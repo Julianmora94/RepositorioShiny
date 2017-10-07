@@ -12,6 +12,7 @@ knit        : slidify::knit2slides
 ---
 
 ## Tabla lenguaje marcadores
+Una tabla construida en lenguaje de marcadores.
 ```{r, echo=F}
 library(ggplot2)
 library(knitr)
@@ -21,8 +22,27 @@ kable(head(mtcars))
 
 --- 
 
-## Slide 2
+## Grafica
+```{r, echo=F}
+plot(mtcars)
+```
 
+--- 
 
+## Imagen Estatica
+
+Incluir una gráfica o imagen estática:
+
+![](imagen4.png)
+![](imagen2.jpg)
+
+--- 
+
+## Grafica ggplot2
+
+```{r, echo=T}
+qplot(x=carat, binwidth=0.25, data = diamonds)
+
+```
 
 
